@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Master</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="quiz-container" class="container-main">
+
+        <div class="header">
+            <button id="back-button" class="icon-button back hidden">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                </svg>
+            </button>
+
+            <h1 class="title-main">
+                Quiz Master
+            </h1>
+
+            <button id="theme-toggle" class="icon-button theme" aria-label="Switch Theme"></button>
+
+        </div>
+
+        <div id="config-area" class="config-area bg-config">
+
+            <h2 class="heading-config text-medium">Quiz Settings</h2>
+
+            <div class="input-group">
+                <label for="num-questions" class="input-label text-medium">Number of Questions:</label>
+                <select id="num-questions" class="select-input">
+                    <option value="5">5 Questions</option>
+                    <option value="10" selected>10 Questions</option>
+                    <option value="20">20 Questions</option>
+                    <option value="25">25 Questions</option>
+                    <option value="30">30 Questions</option>
+                    <option value="40">40 Questions</option>
+                    <option value="50">50 Questions</option>
+                </select>
+            </div>
+
+            <div class="input-group last">
+                <label for="category-select" class="input-label text-medium">Select Category:</label>
+                <select id="category-select" class="select-input"></select>
+            </div>
+
+            <button id="start-quiz" class="button-primary mb-3">
+                Start Quiz
+            </button>
+            <button id="view-history" class="button-secondary">
+                View History
+            </button>
+        </div>
+
+        <div id="loading" class="loading hidden">
+            <div class="loader"></div>
+            <div>Fetching questions...</div>
+        </div>
+
+        <div id="quiz-area" class="hidden">
+
+            <div id="question-card" class="question-card">
+                <p id="category" class="question-category text-accent"></p>
+                <p id="question-text" class="question-text text-dark"></p>
+                <p id="question-count" class="question-count text-light"></p>
+            </div>
+
+            <div id="answer-buttons" class="answer-buttons">
+
+            </div>
+
+            <div id="feedback" class="feedback-message"></div>
+
+            <button id="next-button" class="button-primary mt-6" disabled>
+                Next Question
+            </button>
+        </div>
+
+        <div id="result-area" class="result-area hidden">
+            <h2 class="heading-result text-dark">Quiz Complete!</h2>
+            <p id="final-score" class="final-score"></p>
+
+            <button id="restart-button" class="button-primary button-restart">
+                Start New Quiz
+            </button>
+        </div>
+
+        <div id="history-area" class="history-area hidden">
+            <h2 class="heading-result text-dark border-b pb-3">
+                Quiz History
+            </h2>
+            <div id="history-list" class="history-list">
+                <p class="text-light text-center">No past quizzes found.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
