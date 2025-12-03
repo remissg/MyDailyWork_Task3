@@ -488,3 +488,99 @@ body {
         font-size: 1.25rem;
     }
 }
+
+/* Dark theme styles (applied when body has .dark) */
+body.dark {
+    background-color: #020617;
+}
+
+body.dark .container-main {
+    background-color: #1e293b;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(148, 163, 184, 0.1);
+    border: 1px solid #334155;
+}
+
+body.dark .title-main {
+    color: #e5e7eb;
+}
+
+body.dark .icon-button {
+    color: #9ca3af;
+}
+
+body.dark .icon-button:hover {
+    background-color: #334155;
+}
+
+body.dark .config-area {
+    background-color: #1e293b;
+    border-color: #334155;
+}
+
+body.dark .heading-config,
+body.dark .history-title {
+    color: #e5e7eb;
+}
+
+body.dark .input-label,
+body.dark .question-text,
+body.dark .heading-result,
+body.dark .final-score,
+body.dark .history-category,
+body.dark .history-score,
+body.dark .result-message {
+    color: #e5e7eb;
+}
+
+/* Make "light" text utilities brighter in dark mode for readability */
+body.dark .text-light {
+    color: #e5e7eb;
+}
+
+body.dark .text-gray-200 {
+    color: #e5e7eb;
+}
+
+body.dark .text-gray-900 {
+    color: #e5e7eb;
+}
+
+body.dark .select-input {
+    background-color: #0f172a;
+    color: #e5e7eb;
+    border-color: #475569;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.35);
+}
+
+body.dark .button-secondary {
+    background-color: #334155;
+    color: #e5e7eb;
+}
+
+body.dark .button-secondary:hover {
+    background-color: #475569;
+}
+
+body.dark .answer-button-base {
+    background-color: #0f172a;
+    border-color: #334155;
+    color: #e5e7eb;
+}
+
+body.dark .answer-button:hover:not(.correct, .incorrect) {
+    background-color: #1e293b;
+}
+
+body.dark .history-item {
+    background-color: #1e293b;
+    border-color: #334155;
+}
+
+body.dark .history-date {
+    color: #9ca3af;
+}
+
+body.dark .details-view {
+    background-color: #0f172a;
+    border: 1px solid #334155;
+}
